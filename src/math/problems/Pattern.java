@@ -8,7 +8,20 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
+
+
+		for(int i = 100;i>0;i--){
+
+			if(i<90) i = i-1;
+			if(i<70) i = i -1;
+			if(i<40) i = i -1;
+			if(i<10) i = i -1;
+
+
+
+			System.out.print(i+", ");
+		}
+
 
 
 	}

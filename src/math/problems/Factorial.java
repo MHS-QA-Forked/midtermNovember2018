@@ -12,5 +12,15 @@ public class Factorial {
          *
          */
 
+
+        int c, fact = 1;
+
+
+            for (c = 1; c <= 5; c++)
+                fact = fact * c;
+
+            System.out.println("Factorial of 5 is = " + fact);
+        }
+
     }
-}
+

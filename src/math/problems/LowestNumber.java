@@ -16,6 +16,10 @@ public class LowestNumber {
 
 		//find lowest number from the array
 
+
+
+
+
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 		List<String> lowestValue = new ArrayList<String>();
 		try {
