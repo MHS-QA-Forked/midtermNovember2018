@@ -1,67 +1,236 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-=> A programming language
+=> A programming language is a set of commands, instructions and syntax to develop a software.
+
 What jdk contains or composed of and define each components?
-A.
+=>
+
 What is IDE?
-A.
+=>Integrated Development Enviroment.
+
 What are the IDEs available in the market to support java?
+=> Intellij, Eclipse, Netbean, Notepad.
+
 Explain the entire java life cycle.
+
+=> Editor - Source Code - Java Compiler - Bytecode - JVM - Operating System
+
 what is class?
+=> Blue print for creating different objects which defines its properties and behaviour.
 
 What is object?
+=> Object is a combination od data and procedures working on the avaalaible data.
+
 What is the entry point of an application?
+=>Used to control user's access to different versions of an application.
+
+
 Why main is static?
+=> From this method program is execute.
+
+
 Which class is the superclass of all classes?
+=> java.lang.object
+
 What is difference between path and classpath variables?
+=>Path is an environment variable is used by the operating system to find the executables.
+Class Path is aan environment variable which is used by the Java compiler to find the path of class.
+
 What is the difference between an Interface and Abstract class?
+=> Interface has only Abstract method.
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+
 what is Access Specifier?
+=>Use to restrict the scope of a class, constructor , variable , method or data member
+    Default
+    public
+    private
+    protected
+
 What is OOP ? Define each feature of java OOP.
+=> Object Oriented Program
+    Polymerphism
+    Abstraction
+    Inheritance
+    Encapsulation
+
+
+
 What is Java Package and which package is imported by default?
+=> Mechanism to encapsulate a group of classes, sub packages and interfaces.
+   java.lang is imported by default
+
 What is API? Name list of API that you have used so far.
+=> Application Program Interface
+
+   java.util.Scanner
+   java.util.Arrays
+
 Does java support multiple inheritance, explain why or why not?
+=> No
+
 What is method overloading and when it happens?
+=> Define the same method multiple times so that we can call them with
+   different argument lists
+   It happen run time.
+
+
+
+
 Explain exceptions in java and how to handle it.
+=>  Unwanted or unexpected event, which occurs during the execution of a program. Like run time
+    that disrupts the normal flow of the program’s instructions
+
+        try
+            {
+          .....
+            }
+
+        catch(NumberFormatException ex)
+        {
+           System.out.println("Exception is occured");
+        }
+
 What is static keyword in java? How it has been used in variables and methods ?
+=> Non-access modifier.
+
+   static variable: Single copy of variable is created and shared among all objects at class level.
+                    All instances of the class share the same static variable.
+                    static variables can create at class-level only
+
+    static method: Can only directly call other static methods
+                   Can only directly access static data.
+
 What is final and how it has been used variables and methods?
+=> fianl variable: value is constant.
+   final method: cannot be overridden by subclasses.
+
 What is final, finally and finalize?
-What is a constructor ?
+=> final : is a keyword used to restricted
+           final class can't be inherited,
+           final method can't be overridden and
+           final variable value can't be changed.
+
+   finally : is a block is use to place of importance
+             it will be executed whether exception is handled or not.
+
+   finalize :is a method.
+             Used to perform clean up processing just before object is garbage collected
+
+What is a constructor
+=> Block of code similar to a method that's called when an instance of an object
+   is created.
+   It should be same name of class.
+
 Can we have multiple constructors in a class?
+=> Yes, We can do by changing the signature
+
 If we don't have a constructor declared, what is called during the object creation?
+=>
+
 What is "this" keyword in java ?
+=> "this" keyword works as a reference to the current Object,
+    whose Method or constructor is being invoked
+
 What is "super" keyword in java? How many possible way can you use?
+=>
+
 What is JVM stand for ?
+=> Java Virtual Macjine
+
 Is JVM platform independent?
+=> Yes.
+
 What version of java are you using?
+=>1.8.0_91
+
 What is JAR stand for ?
+=>Java Archive
+
 What is the difference between JDK and JVM?
+
 What is the difference between JVM and JRE?
+
 What is compile time and run time?
+=> The source code must be compiled into machine code in order to become and executable program.
+   This compilation process is referred to as compile time.
+
+   A compiled program can be opened and run by a user.
+   When an application is running, it is called runtime.
+
 What is heap?
+
 How java manage it's memory?
+
 What is the difference between String, StringBuffer and StringBuilder?
 What is Singleton class?
 What is Serialization and Deserialization?
 when to use transient variable in java?
+=>
+
 Difference between while and do..while loop?
+=> While loop: tests the condition before the code within the block is executed.
+
+   do..while: Code must always be executed first and then the expression or
+   test condition is evaluated. If it is true, the code executes the body of the loop again.
+
 What is Enum?
+=> Collection of constant
+
 What is Iterator?
+=>  To retrieve elements one by one
+
 Which one will take more memory, an int or Integer?
+=>Integer
+
 Why is String Immutable in Java?
+=> Instances cannot be modified
+
 What is constructor chaining in Java?
+=> "this" keyword is use in same class
+   "super" keyword use in other class
+
 The difference between Serial and Parallel Garbage Collector?
+    Serial: single-threaded environments
+    Parallel: JVM default collector
+
 What is JIT stands for?
+=> Just in Time
+
 Explain Java Heap space and Garbage collection?
+=> Heap Space:
+
+   Garbage Collection:  automatically reclaims the memory for reuse and helps
+   in eliminating memory leaks and other memory-related problems.
+   When an object is no longer used, the Java garbage collector reclaims the underlying memory
+   and reuses it for future object allocations.JVM manages the heap area for all objects and as long as the object is being referenced,
+   it is considered alive. Once an object is no longer referenced or not reachable by an application,
+   the garbage collector removes this object and reclaims the unused memory.
+
 Can you guarantee the garbage collection process?
+=>
+
 What is the difference between stack and heap in Java?
+=>
+
 What is reflection in java and why is it useful?
 what is multithreading in java?
+=> Allows concurrent execution of two or more parts of a program for maximum utilization of CPU.
+   Each part of such program is called a thread.
+
 What is the use of synchronization in Java?
+=> It means that two threads cannot execute the method at the same time
+    and the JVM takes care of enforcing that.
+
 What is Framework?
+=>
+
 What are the testing Framework available in java?
+=>
 Difference between jUnit and testNG?
+=>
+
 What are the dependencies for this project?
 what is dependency injection in java?
 What is static binding and dynamic binding?
