@@ -34,9 +34,18 @@ public class Sort {
     public int[] insertionSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
-        //implement here
+        int a;
+        int b;
+        for (a = 1; a < array.length; a++) {
+            int temp = a;
+            b = a;
+            while (b > 0 && array[b - 1] >= temp) {
+                array[b] = array[b - 1];
+                b--;
+            }
+            array[b] = temp;
 
-
+        }
 
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
@@ -46,7 +55,17 @@ public class Sort {
 
     public int[] bubbleSort(int [] array){
         int [] list = array;
-        //implement here
+        int a;
+        int b;
+        for (a = array.length -1; a > 1; a--){
+            for (b = 0; b < a; b++){
+                if (array[b] > array[b + 1]){
+                    int temp = array[b];
+                    array[b] = array[b + 1];
+                    array[b + 1] = temp;
+                }
+            }
+        }
 
         
         
@@ -67,8 +86,8 @@ public class Sort {
     public int [] quickSort(int [] array){
         int [] list = array;
         //implement here
-        
-        
+
+
 
         return list;
     }

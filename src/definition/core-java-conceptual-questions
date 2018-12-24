@@ -4,16 +4,24 @@ What is programing language?
 => A programming language is a set of commands, instructions and syntax to develop a software.
 
 What jdk contains or composed of and define each components?
-=>
+=> JDK includes jdk and jre. JDK is the java development kit, while JRE is the java runtime environment.
+   JDK components are
+       1. Java compiler- compiles java lanaguage code into bytecode files
+       2. java interpreter- is used to interpret the .java files which jave been compiled
+       3. java disassembler- disassembly  tool that disassembles java files
+       4. java header file generator- generates the c header and source files needed to implement methods and references object variables from source code.
+       5. java documentation- documents Java source files, HTML pages defining the public/protected/nested classes, interfaces, constructors, methods, and fields
+       6. java debugger- command line debugger for java, inspect and debugs java virtual machine
+       7. java applet viewer- views java applets
 
 What is IDE?
-=>Integrated Development Enviroment.
+=>  IDE is integrated development environment where you write code and compile programs.
+    Has text editors/interpreters/compilers
 
 What are the IDEs available in the market to support java?
 => Intellij, Eclipse, Netbean, Notepad.
 
 Explain the entire java life cycle.
-
 => Editor - Source Code - Java Compiler - Bytecode - JVM - Operating System
 
 what is class?
@@ -137,7 +145,7 @@ What is "super" keyword in java? How many possible way can you use?
 =>
 
 What is JVM stand for ?
-=> Java Virtual Macjine
+=> Java Virtual Machine
 
 Is JVM platform independent?
 => Yes.
@@ -149,8 +157,12 @@ What is JAR stand for ?
 =>Java Archive
 
 What is the difference between JDK and JVM?
+=>
+
 
 What is the difference between JVM and JRE?
+=>
+
 
 What is compile time and run time?
 => The source code must be compiled into machine code in order to become and executable program.
@@ -160,12 +172,20 @@ What is compile time and run time?
    When an application is running, it is called runtime.
 
 What is heap?
+=>Memory area for objects and arrays, during runtime.
 
 How java manage it's memory?
+=> variables in stack, objects in heap, When reference variable is destroyed java automatically garbage collects
 
 What is the difference between String, StringBuffer and StringBuilder?
+=> String is a class, string buffer and string builder are mutable can change values.
+
 What is Singleton class?
+=> Singleton classes are class that exist for a specific purpose, limit object to one instance.
+
 What is Serialization and Deserialization?
+=>Turn object into sequence of bytes sent in streams, deserialization is the reverse process
+
 when to use transient variable in java?
 =>
 
@@ -224,17 +244,22 @@ What is the use of synchronization in Java?
     and the JVM takes care of enforcing that.
 
 What is Framework?
-=>
+=> frameworks are abstract programming classes that developers can extend or use to easily develop software
 
 What are the testing Framework available in java?
-=>
+=>testNG, and jUnit
 Difference between jUnit and testNG?
-=>
+=>jUnit uses object oriented testing, and testNG use dependency testing.
 
 What are the dependencies for this project?
-what is dependency injection in java?
-What is static binding and dynamic binding?
+=>
 
+what is dependency injection in java?
+=> Dependency injection is when objects pass in dependencies externally,
+   or dependencies are later applied through frameworks
+
+What is static binding and dynamic binding?
+=> Static binding references are done during compiler time and dynamic binding references are done during runtime.
 
 
 
