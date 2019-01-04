@@ -76,7 +76,7 @@ What is API? Name list of API that you have used so far.
    java.util.Arrays
 
 Does java support multiple inheritance, explain why or why not?
-=> No
+=> No because of ambiguity
 
 What is method overloading and when it happens?
 => Define the same method multiple times so that we can call them with
@@ -135,7 +135,7 @@ Can we have multiple constructors in a class?
 => Yes, We can do by changing the signature
 
 If we don't have a constructor declared, what is called during the object creation?
-=>
+=> Default constructor
 
 What is "this" keyword in java ?
 => "this" keyword works as a reference to the current Object,
@@ -157,11 +157,13 @@ What is JAR stand for ?
 =>Java Archive
 
 What is the difference between JDK and JVM?
-=>
+=> JDK stand for Java Development Kit, it need to compile the java code
+   JVM stand for Java Virtual Machine, it need to run java bytecode.
 
 
 What is the difference between JVM and JRE?
-=>
+=> JVM stand for Java Virtual Machine, it need to run java bytecode.
+   JRE stand for Java Runtime Environment, contain a set of tools and libraries that JVM use.
 
 
 What is compile time and run time?
@@ -172,7 +174,7 @@ What is compile time and run time?
    When an application is running, it is called runtime.
 
 What is heap?
-=>Memory area for objects and arrays, during runtime.
+=>Memory area for objects and arrays, during runtime. It is dynamic.
 
 How java manage it's memory?
 => variables in stack, objects in heap, When reference variable is destroyed java automatically garbage collects
@@ -229,12 +231,15 @@ Explain Java Heap space and Garbage collection?
    the garbage collector removes this object and reclaims the unused memory.
 
 Can you guarantee the garbage collection process?
-=>
+=> No
 
 What is the difference between stack and heap in Java?
 =>
 
 What is reflection in java and why is it useful?
+=>
+
+
 what is multithreading in java?
 => Allows concurrent execution of two or more parts of a program for maximum utilization of CPU.
    Each part of such program is called a thread.
@@ -248,6 +253,7 @@ What is Framework?
 
 What are the testing Framework available in java?
 =>testNG, and jUnit
+
 Difference between jUnit and testNG?
 =>jUnit uses object oriented testing, and testNG use dependency testing.
 
@@ -259,7 +265,8 @@ what is dependency injection in java?
    or dependencies are later applied through frameworks
 
 What is static binding and dynamic binding?
-=> Static binding references are done during compiler time and dynamic binding references are done during runtime.
+=> Static binding references are done during compiler time
+   Dynamic binding references are done during runtime.
 
 
 

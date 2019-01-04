@@ -21,42 +21,42 @@ public class EmployeeInfo {
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
-	
+
 	/*
-	 * You must implement the logic for below 2 methods and 
+	 * You must implement the logic for below 2 methods and
 	 * following 2 methods are prototype as well for other methods need to be design,
 	 * as you will come up with the new ideas.
 	 */
-	
+
 	/*
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
-		
+
 	}
     public EmployeeInfo(String name, int employeeId){
-		
+
 	}
-	
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
-	 * Hints: 10% of the salary for best performance, 8% of the salary for average performance and so on. 
+	 * Hints: 10% of the salary for best performance, 8% of the salary for average performance and so on.
 	 * You can set arbitrary number for performance.
 	 * So you probably need to send 2 arguments.
-	 * 
+	 *
 	 */
 	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
 		int total=0;
 		return total;
 	}
-	
+
 	/*
 	 * This methods should calculate Employee Pension based on salary and numbers of years with the company.
 	 * Then it will return the total pension. So you need to implement the logic.
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
-	 * 
+	 *
 	 */
 	public static int calculateEmployeePension(){
 		int total=0;

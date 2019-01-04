@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class Numbers {
 
-	/*
+		/*
 	 * Show all the different kind of sorting algorithm by applying into (num array).
 	 * Display the execution time for each sorting.Example in below.
 	 *
@@ -22,7 +22,7 @@ public class Numbers {
 
 	public static void main(String[] args) throws Exception {
 		
-		int [] num = new int[1000000];
+		int [] num = new int[10];
 		storeRandomNumbers(num);
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 		//Selection Sort
@@ -35,24 +35,112 @@ public class Numbers {
         printValue(numbers);
 		int n = num.length;
 		randomize (num, n);
+		System.out.println("...................................................");
+
 		//Insertion Sort
 		algo.insertionSort(num);
 		long insertionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 
-		//By following above, Continue for rest of the Sorting Algorithm....
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "InsertionSort_Table", "SortingNumbers");
+		System.out.println("Data showing form database :");
+		List<String> numinsert = connectToSqlDB.readDataBase("InsertionSort_Table", "SortingNumbers");
+		printValue(numinsert);
+		int ninsert = num.length;
+		randomize(num, ninsert);
+		System.out.println(".............................................................");
+
+		//Bubble Sort
+		algo.bubbleSort(num);
+		long bubbleSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
+
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "bubble_sort_table", "SortingNumbers");
+		System.out.println("Data showing form database :");
+		List<String> numbersbuble = connectToSqlDB.readDataBase("bubble_sort_table", "SortingNumbers");
+		printValue(numbersbuble);
+		int nbub = num.length;
+		randomize(num, nbub);
+		System.out.println("....................................................................");
 
 
+		//Merge Sort
+		algo.mergeSort(num);
+		long mergSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Merge Sort take: " + mergSortExecutionTime + " milli sec");
+
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "merge_sort_table", "SortingNumbers");
+		System.out.println("Data showing form database :");
+		List<String> numbersmerge = connectToSqlDB.readDataBase("merge_sort_table", "SortingNumbers");
+		printValue(numbersmerge);
+		int nmerge = num.length;
+		randomize(num, nmerge);
+		System.out.println("................................................................................");
 
 
-		//Come to conclusion about which Sorting Algo is better in given data set.
+		//Quick Sort
+		algo.quickSort(num);
+		long quickSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Quick Sort take: " + quickSortExecutionTime + " milli sec");
+
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "quick_sort_table", "SortingNumbers");
+		System.out.println("Data showing form database :");
+		List<String> numbersquick = connectToSqlDB.readDataBase("quick_sort_table", "SortingNumbers");
+		printValue(numbersquick);
+		int nquick = num.length;
+		randomize(num, nquick);
+		System.out.println("........................................................................................");
+
+
+		//Heap Sort
+		algo.heapSort(num);
+		long heapSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Heap Sort take: " + heapSortExecutionTime + " milli sec");
+
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "heap_sort_table", "SortingNumbers");
+		System.out.println("Data showing form database :");
+		List<String> numbersheap = connectToSqlDB.readDataBase("heap_sort_table", "SortingNumbers");
+		printValue(numbersheap);
+		int nheap = num.length;
+		randomize(num, nheap);
+		System.out.println(".........................................................................................");
+
+		//Bucket Sort
+		algo.bucketSort(num);
+		long bucketSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Bucket Sort take: " + bucketSortExecutionTime + " milli sec");
+
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "bucket_sort_table", "SortingNumbers");
+		System.out.println("Data showing form database :");
+		List<String> numbersbucket = connectToSqlDB.readDataBase("bucket_sort_table", "SortingNumbers");
+		printValue(numbersbucket);
+		int nbucket = num.length;
+		randomize(num, nbucket);
+		System.out.println(".....................................................................................................");
+
+		//Shell Sort
+		algo.shellSort(num);
+		long shellSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Shell Sort take: " + shellSortExecutionTime + " milli sec");
+
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "shell_sort_table", "SortingNumbers");
+		System.out.println("Data showing form database :");
+		List<String> numbersshel = connectToSqlDB.readDataBase("shell_sort_table", "SortingNumbers");
+		printValue(numbersshel);
+		int nshel = num.length;
+		randomize(num, nshel);
+		System.out.println("..................................................................................");
+
+			//Come to conclusion about which Sorting Algo is better in given data set.
+
+
 
 	}
 
 	public static void storeRandomNumbers(int [] num){
 		Random rand = new Random();
 		for(int i=0; i<num.length; i++){
-			num[i] = rand.nextInt(1000000);
+			num[i] = rand.nextInt(10);
 		}
 	}
 
